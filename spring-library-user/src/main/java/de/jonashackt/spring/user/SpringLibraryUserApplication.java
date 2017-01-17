@@ -23,16 +23,7 @@ public class SpringLibraryUserApplication {
 	public static final String REST_SERVICE_RESPONSE = "Nice to have you here! I calculated our Products prices for you: ";
 
 	public static void main(String[] args) {
-		ApplicationContext ctx = SpringApplication.run(SpringLibraryUserApplication.class, args);
-
-		System.out.println("Let's inspect the beans provided by Spring Boot:");
-
-		String[] beanNames = ctx.getBeanDefinitionNames();
-		Arrays.sort(beanNames);
-		for (String beanName : beanNames) {
-			System.out.println(beanName);
-
-		}
+		SpringApplication.run(SpringLibraryUserApplication.class, args);
 	}
 
 	@RequestMapping
